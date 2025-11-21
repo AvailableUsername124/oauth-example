@@ -90,6 +90,8 @@ def renderPage2():
         user_data_pprint4 = pprint.pformat(session['user_data']['site_admin'])
     else:
         user_data_pprint2 = '';
+        user_data_pprint3 = '';
+        user_data_pprint4 = '';
     return render_template('page2.html',dump_user_data2=user_data_pprint2,dump_user_data3=user_data_pprint3,dump_user_data4=user_data_pprint4)
 
 #the tokengetter is automatically called to check who is logged in.
